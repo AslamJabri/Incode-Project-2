@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    display: flex;
+    background-color: #6A7B8B;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    font-size: small;
+}
+.logo {
+    width: 25%;
+    cursor: pointer;
+    margin-right: auto;
+}
+.links{
+    list-style: none;
+}
+.links li{
+    display: inline-block;
+    padding: 0px 0px 5px 5px;
+}
+.links li a{
+    transition: all 0.3s ease 0s;
+    color: white;
+    text-decoration: none;
+}
+
