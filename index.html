@@ -6,23 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr.Coffee</title>
     <link rel="stylesheet" href="application.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
         <img class = "logo" src="Assets/full_logo_white.png" alt = "Mr.Coffee Logo">
-        <nav>
+        <nav class = "desktop">
             <ul>
-                <li> <a href="index.html">Accueil</a></li>
-                <li> <a href="about.html">Qui&nbsp; sommes-nous?</a></li>
-                <li> <a href="contact.html">Nous&nbsp; contacter</a></li>
+                <li> <a   href="index.html"><span>Accueil</span></a></li>
+                <li> <a href="about.html"><span> Qui&nbsp; sommes-nous?</span></a></li>
+                <li> <a href="contact.html"><span>Nous&nbsp; contacter</span></a></li>
             </ul>
         </nav>
+        <nav class = "mobile">
+            <ul>
+                <li> <a class="home fa fa-home fa-fw"  href="index.html"><span>Accueil</span></a></li>
+                <li> <a class ="about fa fa-info fa-fw  "href="about.html"><span> Qui&nbsp; sommes-nous?</span></a></li>
+                <li> <a class ="contact fa fa-envelope fa-wf "href="contact.html"><span>Nous&nbsp; contacter</span></a></li>
+            </ul>
+        </nav>
+        
     </header>
     <main>
         <img class = "black-logo" src="/Assets/logo_mrcoffee.png" alt="Mr.Coffee black logo">
 
         <div class="text-image">
-            <h3>DÉCOUVREZ NOTRE CAFÉ PHILO</h3>
+            <h3 class = "text1">DÉCOUVREZ NOTRE CAFÉ PHILO</h3>
             <img src="Assets/mr_coffee_salle.jpg" alt="">
         </div>
 
@@ -32,17 +41,22 @@
 
         <div class = "box">
             <div class = "box lebon">
+                
                 <img src="Assets/icon_café.png" alt="the good coffee">
+                <h2>Le bon café </h2>
                 <strong>Nos priorités : la qualité et le goût. Tous nos cafés sont soigneusements séléctionnés en accord avec nos valeurs de respect de la nature et des hommes.</strong>
             </div>
 
             <div class="box les">
+               
                 <img src="/Assets/icon_gens.png" alt="people trust logo">
+                <h2>Les gens</h2>
                 <strong>Nous sommes de ceux qui pensent qu’ensemble, nous allons plus loin.C’est pourquoi chez Mr.Coffee, notre mission est de rassembler les gens en leur offrant un lieu de liberté et de partages.</strong>
             </div>
 
             <div class = "box histories">
                 <img src="/Assets/icon_histoires.png" alt="histories logo">
+                <h2>Les histories</h2>
                 <strong>Chez Mr.Coffee, que vous soyez poête, fantasque ou philosophe, nous vous offrons un lieu pour parler de vos histoires, ou pour les écrire. </strong>
             </div>
         </div>
