@@ -4,50 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylecss" href="/www/application.css">
+    <title>Mr.Coffee</title>
+
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_package_v0.16/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"> 
+
+
+    <link rel="stylesheet" href="application.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header class = "same3">
-        <img class ="logo" src="/www/Assets/full_logo_white.png" alt = "Mr.Coffee Logo">
-        <nav class="Top menu">
-            <ul class = "links">
-                <li> <a href="/www/index.html">Accueil</a></li>
-                <li> <a href="/www/about.html">Qui&nbsp; sommes-nous?</a></li>
-                <li> <a href="contact.html">Nous&nbsp; contacter</a></li>
+    <header>
+        <img class = "logo" src="Assets/full_logo_white.png" alt = "Mr.Coffee Logo">
+        <nav class = "desktop">
+            <ul>
+                <li> <a href="index.html"><span>Accueil</span></a></li>
+                <li> <a href="about.html"><span> Qui&nbsp; sommes-nous?</span></a></li>
+                <li> <a href="contact.html"><span>Nous&nbsp; contacter</span></a></li>
             </ul>
         </nav>
+        <nav class = "mobile">
+            <ul>
+                <li> <a class="home fa fa-home fa-fw"  href="index.html"><span>Accueil</span></a></li>
+                <li> <a class ="about fa fa-info fa-fw  "href="about.html"><span> Qui&nbsp; sommes-nous?</span></a></li>
+                <li> <a class ="contact fa fa-envelope fa-wf "href="contact.html"><span>Nous&nbsp; contacter</span></a></li>
+            </ul>
+        </nav>
+        
     </header>
     <main>
-        <div class = "center_logo">
-            <img src="/www/Assets/logo_mrcoffee.png" alt="Mr.coffee logo">
+        <div class = "center-logo">
+            <img src="/Assets/logo_dark.png" alt="Mr.coffee logo">
         </div>
        <div class = "address">
             <h3 class="heading">On vous attend!</h3>
-            <p>Mr.Coffee</p>
+            <p><b>Mr.Coffee</b></p>
             <p>15 place Jules Guesde</p>
             <p>75006 Paris</p>
-            <p>Tel : +33 9 46 25 78 45</p>
-            <p>Mail : contact@mr-coffee.com</p>
+            <div class ="cont">
+            <a href="Tel : +33 9 46 25 78 45">Tel : +33 9 46 25 78 45</a><br>
+            <a href="mailto:contact@mr-coffee.com"> Mail : contact@mr-coffee.com</a>
+        </div>
         </div> 
-        <div class ="map">
-            <img src="/www/Assets/carte_contact.png" alt="">
+        <div class = "map">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.124709485945!2d2.3185760512948552!3d48.83675987918367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671b5590a00b1%3A0x2711ee015c1c2b2e!2s15%20Rue%20Jules%20Guesde%2C%2075014%20Paris%2C%20France!5e0!3m2!1sen!2sau!4v1628929903432!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </main>
 
-    <footer class = "social">
+    <footer>
+        <div class ="foot">
+            <img src="/Assets/logo_blanc.png" alt="white logo">
 
-        <div class ="social-image">
-            <img src="/www/Assets/logo_mrcoffee.png" alt="white logo">
+            <p>Suivez nous sur les réseaux sociaux !</p>
+
+
+            <div class ="soc">
+                <a href="https://www.linkedin.com"><img src="/Assets/logo_linkedin.png" alt="linkedin"></a>
+                <a href="https://www.twitter.com"><img src="/Assets/logo_twitter.png" alt="twitter"></a>
+                <a href="https:www.facebook.com"><img src="/Assets/logo_facebook.png" alt="facebook"></a>
+            </div>
         </div>
-        
-        <div class = "social-media">
-         <p>Qui sommes-nous?AccueilNous contacterSuivez nous sur les réseaux sociaux !</p>
-        <a href="https://www.twitter.com"><img src="/www/Assets/logo_twitter.png" alt="twitter"></a>
-        <a href="https://www.linkedin.com"><img src="/www/Assets/logo_linkedin.png" alt="linkedin"></a>
-        <a href="https://www.facebook.com"><img src="/www/Assets/logo_facebook.png" alt="facebook"></a>
-        </div>
-        
     </footer>
 </body>
 </html>

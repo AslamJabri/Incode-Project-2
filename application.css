@@ -169,41 +169,37 @@ h1{
 }
 .para{
     display: flex;
-    justify-content :space-around;
-    margin-left: 1rem;
-    font-family: var(--font-family);
 }
-.all , .all1{
-    font-size: 20px;
+.item{
+    flex-basis: 100%;
+    height: 20px;
+    margin: 15px;
 }
-.para2{
-    display: flex;
-    justify-content: space-around;
-    margin-left: 1rem;
-    padding: 1rem;
-    width: 95%;
-    font-family: var(--font-family);
+.para2 strong{
+    float: left;
 }
-.para2-1,.para2-2{
-    font-size: 15px;
+.para2-1 strong{
+    float:right;
 }
 .small{
     text-align: center;
-    margin: 2rem;
+    margin: 1rem;
 }
 .small-1{
     text-align: center;
     font-size: 25px;
     margin: 2rem;
 }
+/*footer*/
 .foot{
     background-color: var(--secondary-color);
     display: flex;
     text-align: center;
     position: relative;
     margin: 0 auto;
-    width: 98%;
-    height: 100px;
+    width: 99%;
+    height: 90px;
+    overflow: hidden;
 
     
 }
@@ -214,13 +210,13 @@ h1{
 
 .soc{
     position: absolute; 
-    padding: 1rem;
+    padding: 0.5rem;
 }
-.soc img{
+.img{
     
-    width: 2%;
+    width: vw;
     color:var(--primary-color);
-    margin-top: 2rem;
+    margin-top: 20px;
      
 }
 footer img{
@@ -233,6 +229,78 @@ footer img{
 }
 .soc a:hover{
     transform: scale(1.5);
+}
+/*this is the styling for contact page*/
+.map{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin: 5px 0;
+    padding-top: 15px;
+    padding-bottom: 1;
+}
+.map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.center-logo{
+    display: flex;
+    position: relative;
+}
+.center-logo img{
+    width:10%;
+    height: 10%;
+    justify-content: center;
+    margin: 2.5rem auto;
+    padding: 1rem;
+}
+.address h3{
+    display: block;
+    text-align: center;
+    margin: 1px 10px;
+    font-size: 30px;
+    font-family: var(--font-family);
+}
+.address p{
+    margin:0px 0px 8px 5rem;
+}
+.cont a{
+    text-decoration: none;
+    color: #5C5B5B;
+    margin:0px 0px 15px 5rem;
+}
+/*styling for about page */
+.about{
+    display: flex;
+    flex-direction: column;
+
+}
+.first h4 , .second h4 {
+    font-size: 2.5rem;
+    margin: 5px;
+}
+.para1{
+    float: right;
+    margin-right: 5px;
+}
+.para2{
+    float: left;
+}
+.para1 , .para2{
+    width: 30%;
+}
+.first p , .second p{
+    font-size: 20px;
+    margin: 8px;
+    padding: 5px;
+   
+}
+.about p{
+    font-size: 5rem;
 }
 .mobile{
     display: none;
@@ -247,22 +315,27 @@ footer img{
 
 
 
-@media screen and (max-width: 800px){
+@media screen and (min-width :400px)and( max-width : 960px){
     .desktop{display: none;}
     .mobile{display: block;}
-
+    .black-logo{display:none;}
+    body{
+        width: 100%;
+        height: 100%;
+    }
         header{
         margin-top: 2px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content:flex-start;
         height: 20vh;
-        flex-direction: row;
+        flex-direction:row;
         }
         .mobile ul{
-            list-style:none;
+            list-style: none;
             margin-bottom: 2rem;
-            margin-top: 25px;
+            margin-top: 23px;
+        
         }
         .mobile  li{
             height: 40px;
@@ -270,7 +343,7 @@ footer img{
             padding: 2px;
             margin: 4px 2px;
             box-shadow: 0 2px 2px;
-                        
+            
         
         }
         .mobile a{
@@ -306,5 +379,84 @@ footer img{
         .mobile li *{
             background: var(--secondary-color-color);
         }
+        .text-image{
+            margin-top: 5px;
+        }
+        .box{
+         display: block;
+         margin: auto;
+        }
+        .lebon , .les , .histories{
+          margin: 5px auto;
+          padding: 1px;
+          height: 260px;
+          width: 50%;
+        }
+        .box h2{
+            font-size: 25px;
+        }
+        .box strong{
+            font-size: 11px;
+        }
+        .pic-text img strong{
+            display: grid;
+            margin: auto; 
+            align-content: center;
+        }
+       .para{
+           display: flex;
+           flex-direction: column;
+       } 
+       
+        .small{
+            text-align: center;
+            margin-top: .5rem;
+        }
+        .small-1{
+            text-align: center;
+            font-size: 25px;
+            margin: 1rem;
+        }
+            
+        }
+        .soc img{
+            width: 4%;
+            margin-top: 2rem;
+        }
+        .center-logo{
+            display: flex;
+            position: relative;
+        }
+        .center-logo img{
+            width:10%;
+            height: 10%;
+            justify-content: center;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .about{
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .first h4 , .second h4{
+            font-size: 1rem;
+            margin: 5px;
+        }
+        .para1{
+            float: right;
+            margin-right: 5px;
+        }
+        .para2{
+            float: left;
+        }
+        .para1 , .para2{
+            width: 30%;
+        }
+        .about p{
+            font-size: 11px;
+            margin: 6px;
+            padding: 1px;
+           
+        }
     
-}

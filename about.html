@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr.Coffee</title>
-    <link rel="stylesheet" href="application.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mr.Coffee</title>
+    
+    
+        
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png">
+        <link rel="manifest" href="/favicon_package_v0.16/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff"> 
+    
+    
+        <link rel="stylesheet" href="application.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
 <body>
-    <header>
-        <img class = "logo" src="Assets/full_logo_white.png" alt = "Mr.Coffee Logo">
-        <nav>
-            <ul>
-                <li> <a href="index.html">Accueil</a></li>
-                <li> <a href="about.html">Qui&nbsp; sommes-nous?</a></li>
-                <li> <a href="contact.html">Nous&nbsp; contacter</a></li>
-            </ul>
-        </nav>
-    </header>
+        <header>
+            <img class = "logo" src="Assets/full_logo_white.png" alt = "Mr.Coffee Logo">
+            <nav class = "desktop">
+                <ul>
+                    <li> <a href="index.html"><span>Accueil</span></a></li>
+                    <li> <a href="about.html"><span> Qui&nbsp; sommes-nous?</span></a></li>
+                    <li> <a href="contact.html"><span>Nous&nbsp; contacter</span></a></li>
+                </ul>
+            </nav>
+            <nav class = "mobile">
+                <ul>
+                    <li> <a class="home fa fa-home fa-fw"  href="index.html"><span>Accueil</span></a></li>
+                    <li> <a class ="about fa fa-info fa-fw  "href="about.html"><span> Qui&nbsp; sommes-nous?</span></a></li>
+                    <li> <a class ="contact fa fa-envelope fa-wf "href="contact.html"><span>Nous&nbsp; contacter</span></a></li>
+                </ul>
+            </nav>
+            
+        </header>
     <main>
-        <div class = "center_logo">
-            <img src="/www/Assets/logo_mrcoffee.png" alt="Mr.coffee logo">
-        </div>
-        <div class ="first">
-            <h4>Chez Mr.Coffee, notre engagement commence dans le café.</h4>
-            <p>On ne pouvait pas offrir un espace de liberté d’expression et de partage sans penser à ce que l’on sert dans nos tasses..Tout nos cafés viennent d’exploitations équitables : les agriculteurs bénéficient d’une rémunération juste pour leur labeur, les conditions de travail respectent les droits de l’Homme.C’est ce qui rend nos cafés si bons : ils poussent, sont cultivés, cueillis, et séchés dans le respect et l’amour.</p>
-            <img class = "para1 first" src="/www/Assets/trois_cafés.jpg" alt="pic of coffee">
-        </div>
-        <div class = "second">
-            <h4>Mr.Coffee, un café (presque) comme les autres.</h4>
-            <p>Ici, on vient pour retrouver quelqu’un, ou se retrouver avec soi, pour travailler sur son ordinateur ou se détendre, pour lire parmis les ouvrages de notre bibliothèque ou simplement apprécier un bon café.Tout ce monde si différent qui se croise sans se voir, ça nous a donné envie de faire quelque chose en plus. C’est comme cela que Mr.Coffee, le philosophe, est né.Notre ambition : réunir des gens de tous les horizons autour de sujets de société, de débats philosophiques, de leur passion commune pour l’écriture et les lettres.</p>
+        
+            <div class = "center-logo">
+                <img src="Assets/logo_dark.png" alt="Mr.coffee logo">
+            </div>
+        <div class ="about">
+            <div class ="first">
+                <img class = "para1 first" src="Assets/trois_cafés.jpg" alt="pic of coffee">
+                <h4>Chez Mr.Coffee, notre engagement commence dans le café.</h4>
+                <p>On ne pouvait pas offrir un espace de liberté d’expression et de partage sans penser à ce que l’on sert dans nos tasses.. </p>
+                <p>Tout nos cafés viennent d’exploitations équitables : les agriculteurs bénéficient d’une rémunération juste pour leur labeur, les conditions de travail respectent les droits de l’Homme.</p>
+                <p>C’est ce qui rend nos cafés si bons : ils poussent, sont cultivés, cueillis, et séchés dans le respect et l’amour.</p>
+            </div>
+            <div class = "second">
             <img class = "para2 second " src="Assets/mrcoffee_salle2.jpg" alt="Mr coffee salle">
+                <h4>Mr.Coffee, un café (presque) comme les autres.</h4>
+                <p>Ici, on vient pour retrouver quelqu’un, ou se retrouver avec soi, pour travailler sur son ordinateur ou se détendre, pour lire parmis les ouvrages de notre bibliothèque ou simplement apprécier un bon café.</p>
+                <p>Tout ce monde si différent qui se croise sans se voir, ça nous a donné envie de faire quelque chose en plus.</p>
+                <p>C’est comme cela que Mr.Coffee, le philosophe, est né. </p>
+                <p>Notre ambition : réunir des gens de tous les horizons autour de sujets de société, de débats philosophiques, de leur passion commune pour l’écriture et les lettres.</p>
+            </div>   
         </div>
     </main>
 
-    <footer class = "social">
+    <footer>
+        <div class ="foot">
+            <img src="/Assets/logo_blanc.png" alt="white logo">
 
-        <div class ="social-image">
-            <img src="/www/Assets/logo_mrcoffee.png" alt="white logo">
+            <p>Suivez nous sur les réseaux sociaux !</p>
+
+            <div class ="soc">
+                <a href="https://www.linkedin.com"><img src="/Assets/logo_linkedin.png" alt="linkedin"></a>
+                <a href="https://www.twitter.com"><img src="/Assets/logo_twitter.png" alt="twitter"></a>
+                <a href="https:www.facebook.com"><img src="/Assets/logo_facebook.png" alt="facebook"></a>
+            </div>
         </div>
-        
-        <div class = "social-media">
-            <p>Qui sommes-nous?AccueilNous contacterSuivez nous sur les réseaux sociaux !</p>
-        <a href="https://www.twitter.com"><img src="/www/Assets/logo_twitter.png" alt="twitter"></a>
-        <a href="https://www.linkedin.com"><img src="/www/Assets/logo_linkedin.png" alt="linkedin"></a>
-        <a href="https://www.facebook.com"><img src="/www/Assets/logo_facebook.png" alt="facebook"></a>
-        </div>
-        
     </footer>
 </body>
 </html>
