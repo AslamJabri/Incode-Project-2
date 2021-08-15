@@ -252,7 +252,7 @@ footer img{
     position: relative;
 }
 .center-logo img{
-    width:10%;
+    width:20%;
     height: 10%;
     justify-content: center;
     margin: 2.5rem auto;
@@ -280,7 +280,7 @@ footer img{
 
 }
 .first h4 , .second h4 {
-    font-size: 2.5rem;
+    font-size: 30px;
     margin: 5px;
 }
 .para1{
@@ -289,19 +289,19 @@ footer img{
 }
 .para2{
     float: left;
+    margin-left: 1rem;
 }
 .para1 , .para2{
-    width: 30%;
+    width: 4%;
+
 }
 .first p , .second p{
     font-size: 20px;
-    margin: 8px;
-    padding: 5px;
+    margin: 10px;
+    padding: 10px;
    
 }
-.about p{
-    font-size: 5rem;
-}
+
 .mobile{
     display: none;
 }
@@ -315,7 +315,7 @@ footer img{
 
 
 
-@media screen and (min-width :400px)and( max-width : 960px){
+@media screen and ( max-width : 960px){
     .desktop{display: none;}
     .mobile{display: block;}
     .black-logo{display:none;}
@@ -440,7 +440,6 @@ footer img{
         
         }
         .first h4 , .second h4{
-            font-size: 1rem;
             margin: 5px;
         }
         .para1{
@@ -449,14 +448,11 @@ footer img{
         }
         .para2{
             float: left;
+            
         }
         .para1 , .para2{
             width: 30%;
+            margin: 5px;
         }
-        .about p{
-            font-size: 11px;
-            margin: 6px;
-            padding: 1px;
-           
-        }
+        
     
