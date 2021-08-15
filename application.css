@@ -233,7 +233,7 @@ footer img{
 /*this is the styling for contact page*/
 .map{
     overflow:hidden;
-    padding-bottom:56.25%;
+    padding-bottom:56%;
     position:relative;
     height:0;
     margin: 5px 0;
@@ -243,9 +243,11 @@ footer img{
 .map iframe{
     left:0;
     top:0;
-    height:100%;
-    width:100%;
+    height:90%;
+    width:90%;
     position:absolute;
+    margin-left: 4rem;
+    padding: 20px;
 }
 .center-logo{
     display: flex;
