@@ -11,20 +11,22 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 header{
     background-color: var(--secondary-color);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    overflow: hidden;
 }
 
-header img{
+.logo{
     width: 9rem;
-    margin:1rem  1rem ;
+    margin:1rem;
+    overflow: hidden;
     
 }
 .desktop {
@@ -35,6 +37,7 @@ header img{
 }
 .desktop ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin : 5px;
 }
@@ -62,6 +65,7 @@ header img{
     position: relative;
     margin:auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 95%;
     
@@ -195,6 +199,7 @@ h1{
 .foot{
     background-color: var(--secondary-color);
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     position: relative;
     margin: 0 auto;
@@ -212,6 +217,8 @@ h1{
 .soc{
     position: absolute; 
     padding: 0.5rem;
+    
+    
 }
 .img{
     
@@ -223,17 +230,22 @@ h1{
 footer img{
     width: 5vw;
     margin: 10px 0 10px 10px;
+    
 
 }
 .soc a {
     color: black;
+    
+    
 }
-.soc a:hover{
+.soc img a:hover{
     transform: scale(1.5);
+    
 }
 /*this is the styling for contact page*/
 .map{
-    overflow:hidden;
+    display: flex;
+    overflow: hidden;
     padding-bottom:56%;
     position:relative;
     height:0;
@@ -244,8 +256,8 @@ footer img{
 .map iframe{
     left:0;
     top:0;
-    height:90%;
-    width:90%;
+    height:95%;
+    width:80%;
     position:absolute;
     margin-left: 4rem;
     padding: 20px;
@@ -261,10 +273,12 @@ footer img{
     margin: 2.5rem auto;
     padding: 1rem;
 }
+
 .address h3{
-    display: block;
-    text-align: center;
-    margin: 1px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
     font-size: 30px;
     font-family: var(--font-family);
 }
@@ -303,6 +317,27 @@ footer img{
     margin: 10px;
     padding: 10px;
    
+}
+/*contact page feedback styling*/
+.feedback{
+    display: block;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    padding: 2%;
+    width: 95%;
+    overflow: hidden;
+}
+.feedback h2{
+    text-align: center;
+}
+
+input[type ="text"],input[type="number"],input [type =email]{
+    width: 60%;
+    padding:12px;
+    background-color:#C5CBD0;
+    margin: 5px 0;
+    box-sizing: border-box;
 }
 
 .mobile{

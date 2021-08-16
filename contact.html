@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr.Coffee</title>
-
+    <script src="/form.js"></script>
 
     
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
@@ -40,6 +40,30 @@
     <main>
         <div class = "center-logo">
             <img src="Assets/logo_dark.png" alt="Mr.coffee logo">
+        </div>
+        <div class = "feedback">
+            <h2 class = "headin"> Dites nous tout!</h2>
+            <form action="contact.html" method="GET">
+
+                    <label for="Name">Nom *</label><br>
+                    <input type="text"  placeholder = "Nom"id = "Name" required><br>
+           
+                
+                    <label for="Prénom ">Prénom *</label><br>
+                    <input type="text"  placeholder = "Prénom"id = "fname" required><br>
+               
+                    <label for="Téléphone">Téléphone *</label><br>
+                    <input type="number"  placeholder = "Téléphone"id = "Telephone" required><br>
+                   
+                    <label for="Adresse mail ">Adress mail *</label><br>
+                    <input type="email"  placeholder = "Adresse mail "id = "email" required><br>
+      
+                    <label for="Message ">Message *</label><br>
+                    <input type="text"  placeholder = "Tapez votre message ici "id = "Message" required cols="30" rows ="2"><br>
+                
+                    <button class = "button"><input type="submit" value ="ENVOYER"></button>
+                
+            </form>
         </div>
        <div class = "address">
             <h3 class="heading">On vous attend!</h3>
