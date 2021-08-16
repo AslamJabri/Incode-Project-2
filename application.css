@@ -98,6 +98,7 @@ header img{
     margin: 1rem;
     width: 95%;
     padding: 5px;
+    box-shadow: 3px;
  }
 .lebon , .les, .histories {
      background-color : var(--third-color);
