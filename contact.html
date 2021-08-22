@@ -13,7 +13,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff"> 
 
-
+    <script src="form.js" defer></script>
     <link rel="stylesheet" href="application.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -44,41 +44,27 @@
             <h2 class = "heading"> Dites nous tout!</h2>
         </div>
         <div class ="form">
-                <form action="/contact.html" method="GET">
+                <form id ='form'>
 
-                    <label for="Name">Nom *</label><br>
-                    <input type="text"  placeholder = "Nom"id = "Name" required><br>
+                    <label for="Name">Nom *<br></label>
+                    <input type="text"  placeholder = "Nom" id = "name" required><br>
            
                 
                     <label for="Prénom">Prénom *</label><br>
-                    <input type="text"  placeholder = "Prénom"id = "fname" required><br>
+                    <input type="text"  placeholder = "Prénom"id = "fname" required ><br>
                
                     <label for="Téléphone">Téléphone *</label><br>
                     <input type="number"  placeholder = "Téléphone"id = "Telephone" required><br>
                    
                     <label for="Adresse mail">Adresse mail *</label><br>
-                    <input type="email"  placeholder = "Adresse mail "id = "email" required><br>
+                    <input type="email"  placeholder = "Adresse mail "id = "email" required ><br>
       
                     <label for="Message">Message *</label><br>
-                    <input type="text"  placeholder = "Tapez votre message ici "id = "Message" required cols="30" rows ="2"><br>
+                    <input type="text"  placeholder = "Tapez votre message ici "id = "Message"  cols="30" rows ="3" required><br>
                     
-                    <button data-submit-target="btn" class = "button"><input type="button" value ="ENVOYER" onclick="formval()"></button>
-            <div class ="pop-up active">
-                    <div class = "pop-upt">
-                        <img id ="img_lo" src="/Assets/logo_dark.png" alt="logo">
-                        <strong>MERCI</strong><br>
-                        <strong class  = "pop-pas">Votre message a bien été envoyé !</strong>
-                    </div>
-                    <div class ="pop-up1">
-                        <b>Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee</b>
-                    </div>
-                    <div class ="pop-up2">
-                        <button data-close-button class ="pop" type="button">FERMER</button>
-                    </div>
-                    
-            </div>
-            <div class ="active" id ="overlay"></div>
-            </form>
+                    <button data-modal-target="#modal"  class = "button"><input type="submit" value ="ENVOYER" ></button>
+            
+                </form>
         </div>
      
        <div class = "address">
@@ -94,6 +80,24 @@
         <div class = "map">
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.124709485945!2d2.3185760512948552!3d48.83675987918367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671b5590a00b1%3A0x2711ee015c1c2b2e!2s15%20Rue%20Jules%20Guesde%2C%2075014%20Paris%2C%20France!5e0!3m2!1sen!2sau!4v1628929903432!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
+
+        <div  id = "modal" class="active"  >
+            <div class ="modal-img">
+                <img id ="img_lo" src="/Assets/logo_dark.png" alt="logo">
+            </div>
+            <div class = "modal-header" id = "modal-head">
+                <strong>MERCI</strong><br>
+                <strong >Votre message a bien été envoyé !</strong>
+            </div>
+            <div class ="modal-p">
+                <b>Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee</b>
+            </div>
+            <div id ="modal-close" >
+                <button data-close-button  class ="modal-cls" type="button">FERMER</button>
+            </div>
+            
+    </div>
+    <div  id ="overlay" class ="active"  ></div>
     </main>
 
     <footer>
@@ -110,7 +114,7 @@
             </div>
         </div>
     </footer>
-    <script src="/form.js"></script>
+   
 
 </body>
 </html>
